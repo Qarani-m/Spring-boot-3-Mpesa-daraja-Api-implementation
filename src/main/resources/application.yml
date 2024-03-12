@@ -1,0 +1,13 @@
+spring:
+  application.name: stkpush
+
+server:
+  port: 5363
+
+
+mpesa:
+  daraja:
+    consumer-key: Z13iUmATY2jwVJ6kG15EAjFG2ruPlrSF
+    consumer-secret: XZW0hkzli2CUQtud
+    grant-type: client_credentials
+    oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
