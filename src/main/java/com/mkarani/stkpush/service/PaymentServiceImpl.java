@@ -13,9 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-
-import static com.mkarani.stkpush.utils.Constants.*;
-
 @Service
 @Slf4j
 public class PaymentServiceImpl implements PaymentService{
