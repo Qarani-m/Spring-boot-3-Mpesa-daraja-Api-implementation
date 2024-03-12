@@ -28,7 +28,13 @@ public class PaymentController {
 
 
     @PostMapping("/callback-post")
-    public ResponseEntity<?> handleFlexibleRequest(@RequestBody Map<String, Object> requestBody) {
+    public ResponseEntity<?> handleFlexibleRequestPost(@RequestBody Map<String, Object> requestBody) {
+        System.out.println("Data from request body in controller: " + requestBody);
+        return ResponseEntity.ok("Request processed successfully");
+    }
+
+    @GetMapping("/callback-post")
+    public ResponseEntity<?> handleFlexibleRequestGet(@RequestBody Map<String, Object> requestBody) {
         System.out.println("Data from request body in controller: " + requestBody);
         return ResponseEntity.ok("Request processed successfully");
     }
