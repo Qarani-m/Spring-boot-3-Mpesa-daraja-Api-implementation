@@ -46,11 +46,6 @@ public class PaymentServiceImpl implements PaymentService{
         log.debug("Response Data: {}", responseData);
         return objectMapper.readValue(responseData, AccessTokenResponse.class);
     }
-
-
-
-
-
 }
 
 
